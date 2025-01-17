@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NepessegCLI", "NepessegCLI\NepessegCLI.csproj", "{F64257C4-4181-4377-8579-CE385B7276FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SLNDIR", "SLNDIR", "{6BB0D4D4-5FC2-4391-AF58-E1B3E9B75DEB}"
+	ProjectSection(SolutionItems) = preProject
+		NEPESSEG\adatok-1250.txt = NEPESSEG\adatok-1250.txt
+		NEPESSEG\adatok-utf8.txt = NEPESSEG\adatok-utf8.txt
+		NEPESSEG\csharp.txt = NEPESSEG\csharp.txt
+		NEPESSEG\java.txt = NEPESSEG\java.txt
+		NEPESSEG\NEPESSEG.pdf = NEPESSEG\NEPESSEG.pdf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F64257C4-4181-4377-8579-CE385B7276FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64257C4-4181-4377-8579-CE385B7276FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64257C4-4181-4377-8579-CE385B7276FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64257C4-4181-4377-8579-CE385B7276FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
