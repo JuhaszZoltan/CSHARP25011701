@@ -8,6 +8,8 @@ class Orszag
     public string Fovaros { get; private set; }
     public int FovarosNepesseg { get; private set; }
 
+    public int Nepsuruseg => (int)Math.Round(Nepesseg / (float)Terulet);
+
     public Orszag(string orszagnev, int terulet, int nepesseg, string fovaros, int fovarosNepesseg)
     {
         Orszagnev = orszagnev;

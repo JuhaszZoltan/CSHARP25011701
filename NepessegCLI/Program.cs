@@ -1,7 +1,7 @@
 ﻿using NepessegCLI;
 using System.Text;
 
-const string PATH = "C:\\Users\\juhaszz\\source\\repos\\CSHARP25011701\\NEPESSEG\\adatok-utf8.txt";
+const string PATH = "D:\\PROJECTS\\CSHARP25011701\\NEPESSEG\\adatok-utf8.txt";
 List<Orszag> orszagok = [];
 
 using StreamReader sr = new(PATH, Encoding.UTF8);
@@ -35,7 +35,33 @@ while(!sr.EndOfStream)
         ? int.Parse(darabok[2][..^1]) * 10000
         : int.Parse(darabok[2]);
 
+    string fvaros = darabok[3];
+
+    int fvNepesseg = int.Parse(darabok[4]) * 1000;
+
+    Orszag orszag = new(orszagNev, terulet, nepesseg, fvaros, fvNepesseg);
+
+    orszagok.Add(orszag);
 }
+
+Console.WriteLine("3. feladat");
+Console.WriteLine($"a beolvasott orszagok szama: {orszagok.Count}");
+
+Console.WriteLine("4. feladat");
+var kina = orszagok.Single(o => o.Orszagnev == "Kína");
+Console.WriteLine($"Kina nepsurusege: {kina.Nepsuruseg} fo/km^2");
+
+Console.WriteLine("5. feladat");
+var india = orszagok.Single(o => o.Orszagnev == "India");
+int kulonbseg = kina.Nepesseg - india.Nepesseg;
+Console.WriteLine($"Kinaban a lakossag {kulonbseg} fovel volt tobb");
+
+var rendezett = orszagok.OrderByDescending(o => o.Nepesseg).ToList();
+
+Console.WriteLine("6. feladat");
+Console.WriteLine($"a harmadik legnepesebb orszag: " +
+    $"{rendezett[2].Orszagnev}, " +
+    $"lakossága {rendezett[2].Nepesseg} fo");
 
 
 
