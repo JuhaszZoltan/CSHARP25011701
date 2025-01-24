@@ -63,5 +63,13 @@ Console.WriteLine($"a harmadik legnepesebb orszag: " +
     $"{rendezett[2].Orszagnev}, " +
     $"lakossága {rendezett[2].Nepesseg} fo");
 
+Console.WriteLine("8. feladat: a kovetkezo orszagok lakossaganak tobb, mint 30%-a a fovarosban lakik:");
+var koncentraltLO = orszagok.Where(o => o.FVbeKoncentralt);
+foreach (var o in koncentraltLO)
+{
+    Console.WriteLine($"\t{o.Orszagnev} ({o.Fovaros})");
+}
+
+
 
 
