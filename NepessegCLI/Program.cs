@@ -69,7 +69,7 @@ foreach (var o in koncentraltLO)
 {
     Console.WriteLine($"\t{o.Orszagnev} ({o.Fovaros})");
 }
-
+//nagy balint csitar
 
 
 
