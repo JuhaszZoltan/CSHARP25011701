@@ -1,7 +1,11 @@
+using System.Text;
+
 namespace Adatbovites;
 
 public partial class AdatbovitesForm : Form
 {
+    const string PATH = "D:\\PROJECTS\\CSHARP25011701\\NEPESSEG\\ujadat.txt";
+
     public AdatbovitesForm()
     {
         InitializeComponent();
@@ -23,7 +27,13 @@ public partial class AdatbovitesForm : Form
         }
         else
         {
+            using StreamWriter sw = new(PATH, true, Encoding.UTF8);
 
+            sw.WriteLine($"{tbxOrszag.Text};{tbxTerulet.Text};{tbxNepesseg.Text};{tbxFovaros.Text};{tbxFvLakossag.Text}");
+
+
+            lblUzenet.ForeColor = Color.Green;
+            lblUzenet.Text = "A Mentés sikeres!";
         }
     }
 

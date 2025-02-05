@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SLNDIR", "SLNDIR", "{6BB0D4
 		NEPESSEG\csharp.txt = NEPESSEG\csharp.txt
 		NEPESSEG\java.txt = NEPESSEG\java.txt
 		NEPESSEG\NEPESSEG.pdf = NEPESSEG\NEPESSEG.pdf
+		NEPESSEG\ujadat.txt = NEPESSEG\ujadat.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adatbovites", "Adatbovites\Adatbovites.csproj", "{702BEDAC-8DBD-4C10-8048-249B5B263505}"

@@ -1,0 +1,2 @@
+﻿Chile;756950;19458000;Santiago;6257516
+Magyarország;93036;9599744;Budapest;1686222
